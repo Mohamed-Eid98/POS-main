@@ -1,333 +1,304 @@
 @extends('layouts.master')
-@section('css')
-<!--- Internal Select2 css-->
-<link href="{{URL::asset('assets/plugins/select2/css/select2.min.css')}}" rel="stylesheet">
-@endsection
-@section('page-header')
-				<!-- breadcrumb -->
-				<div class="breadcrumb-header justify-content-between">
-					<div class="my-auto">
-						<div class="d-flex">
-							<h4 class="content-title mb-0 my-auto">Forms</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ Form-Layouts</span>
-						</div>
-					</div>
-					<div class="d-flex my-xl-auto right-content">
-						<div class="pr-1 mb-3 mb-xl-0">
-							<button type="button" class="btn btn-info btn-icon ml-2"><i class="mdi mdi-filter-variant"></i></button>
-						</div>
-						<div class="pr-1 mb-3 mb-xl-0">
-							<button type="button" class="btn btn-danger btn-icon ml-2"><i class="mdi mdi-star"></i></button>
-						</div>
-						<div class="pr-1 mb-3 mb-xl-0">
-							<button type="button" class="btn btn-warning  btn-icon ml-2"><i class="mdi mdi-refresh"></i></button>
-						</div>
-						<div class="mb-3 mb-xl-0">
-							<div class="btn-group dropdown">
-								<button type="button" class="btn btn-primary">14 Aug 2019</button>
-								<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuDate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="sr-only">Toggle Dropdown</span>
-								</button>
-								<div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuDate" data-x-placement="bottom-end">
-									<a class="dropdown-item" href="#">2015</a>
-									<a class="dropdown-item" href="#">2016</a>
-									<a class="dropdown-item" href="#">2017</a>
-									<a class="dropdown-item" href="#">2018</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- breadcrumb -->
-@endsection
+
+@section('title') @lang('translation.Form_Layouts') @endsection
+
 @section('content')
-				<!-- row -->
-				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="main-content-label mg-b-5">
-									Horizontal Alignment
-								</div>
-								<p class="mg-b-20">It is Very Easy to Customize and it uses in your website apllication.</p>
-								<div class="pd-30 pd-sm-40 bg-gray-200">
-									<div class="row row-xs">
-										<div class="col-md-5">
-											<input class="form-control" placeholder="Enter your username" type="text">
-										</div>
-										<div class="col-md-5 mg-t-10 mg-md-t-0">
-											<input class="form-control" placeholder="Enter your password" type="password">
-										</div>
-										<div class="col-md mt-4 mt-xl-0">
-											<button class="btn btn-main-primary btn-block">Sign In</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12 col-md-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="main-content-label mg-b-5">
-									Vertical Alignment
-								</div>
-								<p class="mg-b-20">It is Very Easy to Customize and it uses in your website apllication.</p>
-								<div class="row">
-									<div class="col-lg-12">
-										<div class="bg-gray-200 p-4">
-											<div class="form-group">
-												<input class="form-control" placeholder="Enter your username" type="text">
-											</div>
-											<div class="form-group">
-												<input class="form-control" placeholder="Enter your password" type="password">
-											</div><button class="btn btn-main-primary pd-x-20">Sign In</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /row -->
 
-				<!-- row -->
-				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="main-content-label mg-b-5">
-									Left Label Alignment
-								</div>
-								<p class="mg-b-20">It is Very Easy to Customize and it uses in your website apllication.</p>
-								<div class="pd-30 pd-sm-40 bg-gray-200">
-									<div class="row row-xs align-items-center mg-b-20">
-										<div class="col-md-4">
-											<label class="form-label mg-b-0">Firstname</label>
-										</div>
-										<div class="col-md-8 mg-t-5 mg-md-t-0">
-											<input class="form-control" placeholder="Enter your firstname" type="text">
-										</div>
-									</div>
-									<div class="row row-xs align-items-center mg-b-20">
-										<div class="col-md-4">
-											<label class="form-label mg-b-0">Lastnane</label>
-										</div>
-										<div class="col-md-8 mg-t-5 mg-md-t-0">
-											<input class="form-control" placeholder="Enter your lastname" type="text">
-										</div>
-									</div>
-									<div class="row row-xs align-items-center mg-b-20">
-										<div class="col-md-4">
-											<label class="form-label mg-b-0">Email</label>
-										</div>
-										<div class="col-md-8 mg-t-5 mg-md-t-0">
-											<input class="form-control" placeholder="Enter your email" type="email">
-										</div>
-									</div>
-									<button class="btn btn-main-primary pd-x-30 mg-r-5 mg-t-5">Register</button>
-									<button class="btn btn-dark pd-x-30 mg-t-5">Cancel</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /row -->
+@component('components.breadcrumb')
+@slot('li_1') Forms @endslot
+@slot('title') Form Layouts @endslot
+@endcomponent
 
-				<!-- row -->
-				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="main-content-label mg-b-5">
-									Form Group Wrapper
-								</div>
-								<p class="mg-b-20">It is Very Easy to Customize and it uses in your website apllication.</p>
-								<div class="">
-									<div class="row row-xs formgroup-wrapper">
-										<div class="col-md-6">
-											<div class="main-form-group">
-												<label class="form-label">Email</label> <input class="form-control" placeholder="Enter your email" type="email" value="me@sprukotechnologies.com">
-											</div><!-- main-form-group -->
-										</div>
-										<div class="col-md-6 mg-t-20 mg-md-t-0">
-											<div class="main-form-group">
-												<label class="form-label">Password</label> <input class="form-control" placeholder="Enter your password" type="password" value="thisismypassword">
-											</div><!-- main-form-group -->
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /row -->
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-4">Form Grid Layout</h4>
 
-				<!-- row -->
-				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="main-content-label mg-b-5">
-									Form in Dropdown
-								</div>
-								<p class="mg-b-20">It is Very Easy to Customize and it uses in your website apllication.</p>
-								<div class="main-dropdown-form-demo">
-									<div class="mg-t-20">
-										<button class="btn btn-main-primary pd-x-20" data-toggle="dropdown">Live Example <i class="icon ion-ios-arrow-down mg-l-5 tx-12"></i></button>
-										<div class="dropdown-menu">
-											<h6 class="dropdown-title">Subscribe</h6>
-											<p class="mg-b-20">Don't miss any update from us.</p>
-											<div class="form-group">
-												<input class="form-control" placeholder="Enter your fullname" type="text">
-											</div>
-											<div class="form-group">
-												<input class="form-control" placeholder="Enter your email" type="email">
-											</div><button class="btn btn-primary btn-block">Subscribe</button>
-										</div>
-									</div>
-								</div><!-- main-dropdown-demo -->
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /row -->
+                <form>
+                    <div class="mb-3">
+                        <label for="formrow-firstname-input" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="formrow-firstname-input" placeholder="Enter Your First Name">
+                    </div>
 
-				<!-- row -->
-				<div class="row">
-					<div class="col-lg-12 col-md-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="main-content-label mg-b-5">
-									Form in Modal
-								</div>
-								<p class="mg-b-20">It is Very Easy to Customize and it uses in your website apllication.</p>
-								<div class="tx-center pd-y-20 bg-gray-200">
-									<a class="btn btn-main-primary" data-target="#modaldemo1" data-toggle="modal" href="">View Live Demo</a>
-								</div><!-- pd-y-30 -->
-								<div class="modal">
-									<div class="modal-dialog wd-xl-400" role="document">
-										<div class="modal-content">
-											<div class="modal-body pd-sm-40">
-												<button aria-label="Close" class="close pos-absolute t-15 r-20 tx-26" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
-												<h5 class="modal-title mg-b-5">Create New Account</h5>
-												<p class="mg-b-20">Let's get you all setup so you can begin using our app.</p>
-												<div class="form-group">
-													<input class="form-control" placeholder="Firstname" type="text">
-												</div>
-												<div class="form-group">
-													<input class="form-control" placeholder="Lastname" type="text">
-												</div>
-												<div class="form-group">
-													<input class="form-control" placeholder="Phone" type="text">
-												</div>
-												<div class="form-group">
-													<input class="form-control" placeholder="Email" type="text">
-												</div>
-												<div class="form-group mg-b-25">
-													<label class="ckbox mg-b-5"><input type="checkbox"><span class="tx-13">I agree to <a href="">Terms</a> and <a href="">Privacy Policy</a></span></label> <label class="ckbox"><input checked type="checkbox"><span class="tx-13">Yes, I want to receive email from your newsletter.</span></label>
-												</div><button class="btn btn-primary btn-block">Continue</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12 col-md-12">
-						<div class="card">
-							<div class="card-body">
-								<div class="main-content-label mg-b-5">
-									Payment Details
-								</div>
-								<p class="mg-b-20">It is Very Easy to Customize and it uses in your website apllication.</p>
-								<div class="row">
-									<div class="col-md-10 col-lg-8 col-xl-6 mx-auto d-block">
-										<div class="card card-body pd-20 pd-md-40 border shadow-none">
-											<h5 class="card-title mg-b-20">Your Payment Details</h5>
-											<div class="form-group">
-												<label class="main-content-label tx-11 tx-medium tx-gray-600">Name on Card</label> <input class="form-control" required="" type="text">
-											</div>
-											<div class="form-group">
-												<label class="main-content-label tx-11 tx-medium tx-gray-600">Card Number</label>
-												<div class="pos-relative">
-													<input class="form-control pd-r-80" required="" type="text">
-													<div class="d-flex pos-absolute t-5 r-10"><img alt="" class="wd-30 mg-r-5" src="{{URL::asset('assets/img/visa.png')}}"> <img alt="" class="wd-30" src="{{URL::asset('assets/img/mastercard.png')}}"></div>
-												</div>
-											</div>
-											<div class="form-group">
-												<div class="row row-sm">
-													<div class="col-sm-9">
-														<label class="main-content-label tx-11 tx-medium tx-gray-600">Expiration Date</label>
-														<div class="row row-sm">
-															<div class="col-sm-7">
-																<select class="form-control select2-no-search">
-																	<option label="Choose one">
-																	</option>
-																	<option value="January">
-																		January
-																	</option>
-																	<option value="February">
-																		February
-																	</option>
-																	<option value="March">
-																		March
-																	</option>
-																	<option value="April">
-																		April
-																	</option>
-																	<option value="May">
-																		May
-																	</option>
-																</select>
-															</div>
-															<div class="col-sm-5 mg-t-10 mg-sm-t-0">
-																<select class="form-control select2-no-search">
-																	<option label="Choose one">
-																	</option>
-																	<option value="2018">
-																		2018
-																	</option>
-																	<option value="2019">
-																		2019
-																	</option>
-																	<option value="2020">
-																		2020
-																	</option>
-																	<option value="2021">
-																		2021
-																	</option>
-																	<option value="2022">
-																		2022
-																	</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<div class="col-sm-3 mg-t-20 mg-sm-t-0">
-														<label class="main-content-label tx-11 tx-medium tx-gray-600">CVC</label> <input class="form-control" required="" type="text">
-													</div>
-												</div>
-											</div>
-											<div class="form-group mg-b-20">
-												<label class="ckbox"><input checked type="checkbox"><span class="tx-13">Save my card for future purchases</span></label>
-											</div>
-											<button class="btn btn-main-primary btn-block">Complete Payment</button>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /row -->
-			</div>
-			<!-- Container closed -->
-		</div>
-		<!-- main-content closed -->
-@endsection
-@section('js')
-<!--Internal  Select2 js -->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.min.js')}}"></script>
-<!-- Form-layouts js -->
-<script src="{{URL::asset('assets/js/form-layouts.js')}}"></script>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="formrow-email-input" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="formrow-email-input" placeholder="Enter Your Email ID">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="formrow-password-input" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="formrow-password-input" placeholder="Enter Your Password">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="mb-3">
+                                <label for="formrow-inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="formrow-inputCity" placeholder="Enter Your Living City">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="mb-3">
+                                <label for="formrow-inputState" class="form-label">State</label>
+                                <select id="formrow-inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="mb-3">
+                                <label for="formrow-inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="formrow-inputZip" placeholder="Enter Your Zip Code">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary w-md">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <!-- end card body -->
+        </div>
+        <!-- end card -->
+    </div>
+    <!-- end col -->
+
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-4">Horizontal Form Layout</h4>
+
+                <form>
+                    <div class="row mb-4">
+                        <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">First name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="horizontal-firstname-input" placeholder="Enter Your ">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label for="horizontal-email-input" class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="horizontal-email-input" placeholder="Enter Your Email ID">
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <label for="horizontal-password-input" class="col-sm-3 col-form-label">Password</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="horizontal-password-input" placeholder="Enter Your Password">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end">
+                        <div class="col-sm-9">
+
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="horizontalLayout-Check">
+                                <label class="form-check-label" for="horizontalLayout-Check">
+                                    Remember me
+                                </label>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-primary w-md">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- end card body -->
+        </div>
+        <!-- end card -->
+    </div>
+    <!-- end col -->
+</div>
+<!-- end row -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-4">Auto Sizing</h5>
+
+                <form class="row gy-2 gx-3 align-items-center">
+                    <div class="col-sm-auto">
+                        <label class="visually-hidden" for="autoSizingInput">Name</label>
+                        <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+                    </div>
+                    <div class="col-sm-auto">
+                        <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-sm-auto">
+                        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                        <select class="form-select" id="autoSizingSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-auto">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                            <label class="form-check-label" for="autoSizingCheck">
+                                Remember me
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-auto">
+                        <button type="submit" class="btn btn-primary w-md">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <!-- end card body -->
+        </div>
+        <!-- end card -->
+    </div>
+    <!-- end col -->
+</div>
+<!-- end row -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-4">Inline forms</h5>
+
+                <form class="row row-cols-lg-auto g-3 align-items-center">
+                    <div class="col-12">
+                        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                        <div class="input-group">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                        <select class="form-select" id="inlineFormSelectPref">
+                            <option selected>Choose...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                            <label class="form-check-label" for="inlineFormCheck">
+                                Remember me
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary w-md">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+            <!-- end card body -->
+        </div>
+        <!-- end card -->
+    </div>
+    <!-- end col -->
+</div>
+<!-- end row -->
+
+<div class="row">
+    <div class="col-xl-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Floating labels</h5>
+                <p class="card-title-desc">Create beautifully simple form labels that float over your input fields.</p>
+
+                <form>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingnameInput" placeholder="Enter Name">
+                        <label for="floatingnameInput">Name</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingemailInput" placeholder="Enter Email address">
+                                <label for="floatingemailInput">Email address</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelectGrid">Works with selects</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="floatingCheck">
+                            <label class="form-check-label" for="floatingCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary w-md">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <!-- end card body -->
+        </div>
+        <!-- end card -->
+    </div>
+    <!-- end col -->
+
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title mb-4">Inline Forms With Hstack</h5>
+
+                <div class="hstack gap-3">
+                    <input class="form-control me-auto" type="text" placeholder="Add your item here..." aria-label="Add your item here...">
+                    <button type="button" class="btn btn-secondary">Submit</button>
+                    <div class="vr"></div>
+                    <button type="button" class="btn btn-outline-danger">Reset</button>
+                </div>
+
+            </div>
+            <!-- end card body -->
+        </div>
+        <!-- end card -->
+    </div>
+    <!-- end col -->
+</div>
+<!-- end row -->
+
 @endsection

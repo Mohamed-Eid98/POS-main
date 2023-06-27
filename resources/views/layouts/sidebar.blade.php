@@ -1,401 +1,433 @@
-<!-- Sidebar-right-->
-		<div class="sidebar sidebar-left sidebar-animate">
-			<div class="panel panel-primary card mb-0 box-shadow">
-				<div class="tab-menu-heading border-0 p-3">
-					<div class="card-title mb-0">Notifications</div>
-					<div class="card-options mr-auto">
-						<a href="#" class="sidebar-remove"><i class="fe fe-x"></i></a>
-					</div>
-				</div>
-				<div class="panel-body tabs-menu-body latest-tasks p-0 border-0">
-					<div class="tabs-menu ">
-						<!-- Tabs -->
-						<ul class="nav panel-tabs">
-							<li class=""><a href="#side1" class="active" data-toggle="tab"><i class="ion ion-md-chatboxes tx-18 ml-2"></i> Chat</a></li>
-							<li><a href="#side2" data-toggle="tab"><i class="ion ion-md-notifications tx-18  ml-2"></i> Notifications</a></li>
-							<li><a href="#side3" data-toggle="tab"><i class="ion ion-md-contacts tx-18 ml-2"></i> Friends</a></li>
-						</ul>
-					</div>
-					<div class="tab-content">
-						<div class="tab-pane active " id="side1">
-							<div class="list d-flex align-items-center border-bottom p-3">
-								<div class="">
-									<span class="avatar bg-primary brround avatar-md">CH</span>
-								</div>
-								<a class="wrapper w-100 mr-3" href="#" >
-									<p class="mb-0 d-flex ">
-										<b>New Websites is Created</b>
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="d-flex align-items-center">
-											<i class="mdi mdi-clock text-muted ml-1"></i>
-											<small class="text-muted ml-auto">30 mins ago</small>
-											<p class="mb-0"></p>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="list d-flex align-items-center border-bottom p-3">
-								<div class="">
-									<span class="avatar bg-danger brround avatar-md">N</span>
-								</div>
-								<a class="wrapper w-100 mr-3" href="#" >
-									<p class="mb-0 d-flex ">
-										<b>Prepare For the Next Project</b>
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="d-flex align-items-center">
-											<i class="mdi mdi-clock text-muted ml-1"></i>
-											<small class="text-muted ml-auto">2 hours ago</small>
-											<p class="mb-0"></p>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="list d-flex align-items-center border-bottom p-3">
-								<div class="">
-									<span class="avatar bg-info brround avatar-md">S</span>
-								</div>
-								<a class="wrapper w-100 mr-3" href="#" >
-									<p class="mb-0 d-flex ">
-										<b>Decide the live Discussion</b>
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="d-flex align-items-center">
-											<i class="mdi mdi-clock text-muted ml-1"></i>
-											<small class="text-muted ml-auto">3 hours ago</small>
-											<p class="mb-0"></p>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="list d-flex align-items-center border-bottom p-3">
-								<div class="">
-									<span class="avatar bg-warning brround avatar-md">K</span>
-								</div>
-								<a class="wrapper w-100 mr-3" href="#" >
-									<p class="mb-0 d-flex ">
-										<b>Meeting at 3:00 pm</b>
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="d-flex align-items-center">
-											<i class="mdi mdi-clock text-muted ml-1"></i>
-											<small class="text-muted ml-auto">4 hours ago</small>
-											<p class="mb-0"></p>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="list d-flex align-items-center border-bottom p-3">
-								<div class="">
-									<span class="avatar bg-success brround avatar-md">R</span>
-								</div>
-								<a class="wrapper w-100 mr-3" href="#" >
-									<p class="mb-0 d-flex ">
-										<b>Prepare for Presentation</b>
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="d-flex align-items-center">
-											<i class="mdi mdi-clock text-muted ml-1"></i>
-											<small class="text-muted ml-auto">1 days ago</small>
-											<p class="mb-0"></p>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="list d-flex align-items-center border-bottom p-3">
-								<div class="">
-									<span class="avatar bg-pink brround avatar-md">MS</span>
-								</div>
-								<a class="wrapper w-100 mr-3" href="#" >
-									<p class="mb-0 d-flex ">
-										<b>Prepare for Presentation</b>
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="d-flex align-items-center">
-											<i class="mdi mdi-clock text-muted ml-1"></i>
-											<small class="text-muted ml-auto">1 days ago</small>
-											<p class="mb-0"></p>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="list d-flex align-items-center border-bottom p-3">
-								<div class="">
-									<span class="avatar bg-purple brround avatar-md">L</span>
-								</div>
-								<a class="wrapper w-100 mr-3" href="#" >
-									<p class="mb-0 d-flex ">
-										<b>Prepare for Presentation</b>
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="d-flex align-items-center">
-											<i class="mdi mdi-clock text-muted ml-1"></i>
-											<small class="text-muted ml-auto">45 mintues ago</small>
-											<p class="mb-0"></p>
-										</div>
-									</div>
-								</a>
-							</div>
-							<div class="list d-flex align-items-center p-3">
-								<div class="">
-									<span class="avatar bg-blue brround avatar-md">U</span>
-								</div>
-								<a class="wrapper w-100 mr-3" href="#" >
-									<p class="mb-0 d-flex ">
-										<b>Prepare for Presentation</b>
-									</p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="d-flex align-items-center">
-											<i class="mdi mdi-clock text-muted ml-1"></i>
-											<small class="text-muted ml-auto">2 days ago</small>
-											<p class="mb-0"></p>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="tab-pane  " id="side2">
-							<div class="list-group list-group-flush ">
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-3">
-										<span class="avatar avatar-lg brround cover-image" data-image-src="{{URL::asset('assets/img/faces/12.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div>
-										<strong>Madeleine</strong> Hey! there I' am available....
-										<div class="small text-muted">
-											3 hours ago
-										</div>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-3">
-										<span class="avatar avatar-lg brround cover-image" data-image-src="{{URL::asset('assets/img/faces/1.jpg')}}"></span>
-									</div>
-									<div>
-										<strong>Anthony</strong> New product Launching...
-										<div class="small text-muted">
-											5 hour ago
-										</div>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-3">
-										<span class="avatar avatar-lg brround cover-image" data-image-src="{{URL::asset('assets/img/faces/2.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div>
-										<strong>Olivia</strong> New Schedule Realease......
-										<div class="small text-muted">
-											45 mintues ago
-										</div>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-3">
-										<span class="avatar avatar-lg brround cover-image" data-image-src="{{URL::asset('assets/img/faces/8.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div>
-										<strong>Madeleine</strong> Hey! there I' am available....
-										<div class="small text-muted">
-											3 hours ago
-										</div>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-3">
-										<span class="avatar avatar-lg brround cover-image" data-image-src="{{URL::asset('assets/img/faces/11.jpg')}}"></span>
-									</div>
-									<div>
-										<strong>Anthony</strong> New product Launching...
-										<div class="small text-muted">
-											5 hour ago
-										</div>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-3">
-										<span class="avatar avatar-lg brround cover-image" data-image-src="{{URL::asset('assets/img/faces/6.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div>
-										<strong>Olivia</strong> New Schedule Realease......
-										<div class="small text-muted">
-											45 mintues ago
-										</div>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-3">
-										<span class="avatar avatar-lg brround cover-image" data-image-src="{{URL::asset('assets/img/faces/9.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div>
-										<strong>Olivia</strong> Hey! there I' am available....
-										<div class="small text-muted">
-											12 mintues ago
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane  " id="side3">
-							<div class="list-group list-group-flush ">
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/9.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Mozelle Belt</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/11.jpg')}}"></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Florinda Carasco</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/10.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Alina Bernier</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/2.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Zula Mclaughin</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/13.jpg')}}"></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Isidro Heide</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/12.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Mozelle Belt</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/4.jpg')}}"></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Florinda Carasco</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/7.jpg')}}"></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Alina Bernier</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/2.jpg')}}"></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Zula Mclaughin</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/14.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Isidro Heide</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/11.jpg')}}"></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Florinda Carasco</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/9.jpg')}}"></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Alina Bernier</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/15.jpg')}}"><span class="avatar-status bg-success"></span></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Zula Mclaughin</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-								<div class="list-group-item d-flex  align-items-center">
-									<div class="ml-2">
-										<span class="avatar avatar-md brround cover-image" data-image-src="{{URL::asset('assets/img/faces/4.jpg')}}"></span>
-									</div>
-									<div class="">
-										<div class="font-weight-semibold" data-toggle="modal" data-target="#chatmodel">Isidro Heide</div>
-									</div>
-									<div class="mr-auto">
-										<a href="#" class="btn btn-sm btn-light" data-toggle="modal" data-target="#chatmodel" ><i class="fab fa-facebook-messenger"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-<!--/Sidebar-right-->
+<!-- ========== Left Sidebar Start ========== -->
+<div class="vertical-menu">
+
+    <div data-simplebar class="h-100">
+
+        <!--- Sidemenu -->
+        <div id="sidebar-menu">
+            <!-- Left Menu Start -->
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li class="menu-title" key="t-menu">الاقسام</li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-home-circle"></i>
+                        <span key="t-dashboards">الاقسام الرئيسيه</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ route('category.add') }}" key="t-default">إضافة قسم رئيسي</a></li>
+                        <li><a href="{{ route('category.show') }}" key="t-saas">عرض الاقسام الرئيسيه</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-layout"></i>
+                        <span key="t-dashboards">الاقسام الفرعيه</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ route('subcategory.add') }}" key="t-default">إضافة قسم فرعي</a></li>
+                        <li><a href="{{ route('subcategory.show') }}" key="t-saas">عرض الاقسام الفرعيه</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="bx bx-layout"></i>
+                        <span key="t-dashboards"> المنتجات</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ route('product.add') }}" key="t-default">إضافة المنتج</a></li>
+                        <li><a href="{{ route('product.show') }}" key="t-saas">عرض المنتجات</a></li>
+                    </ul>
+                </li>
+
+
+
+
+                <ul class="metismenu list-unstyled" id="side-menu">
+                    <li class="menu-title" key="t-menu">الطلبيات</li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-task"></i>
+                            <span class="badge rounded-pill bg-danger float-end">10</span>
+
+                            <span key="t-dashboards"> الطلبيات</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a class="slide-item" href="{{ route('orders.show') }}"> كل الطلبات</a>
+                            <li><a class="slide-item" href="{{ route('product.show') }}"> طلبات معلقه</a>
+                            <li><a class="slide-item" href="{{ route('product.show') }}"> تم التاكيد</a>
+                            <li><a class="slide-item" href="{{ route('product.show') }}"> جاري العمل علبها</a>
+                            <li><a class="slide-item" href="{{ route('product.show') }}"> خارج التوصيل</a>
+                            <li><a class="slide-item" href="{{ route('product.show') }}"> تم توصيلها</a>
+                            <li><a class="slide-item" href="{{ route('product.show') }}"> عادت </a>
+                            <li><a class="slide-item" href="{{ route('product.show') }}"> فشلت </a>
+                            <li><a class="slide-item" href="{{ route('product.show') }}"> تم الغاؤها </a>
+                        </ul>
+                    </li>
+
+
+                    {{-- <li class="menu-title" key="t-apps">@lang('translation.Apps')</li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-calendar"></i>
+                            <span key="t-dashboards">@lang('translation.Calendars')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="calendar" key="t-tui-calendar">@lang('translation.TUI_Calendar')</a></li>
+                            <li><a href="calendar-full" key="t-full-calendar">@lang('translation.Full_Calendar')</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="chat" class="waves-effect">
+                            <i class="bx bx-chat"></i>
+                            <span key="t-chat">@lang('translation.Chat')</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="apps-filemanager" class="waves-effect">
+                            <i class="bx bx-file"></i>
+                            <span key="t-file-manager">@lang('translation.File_Manager')</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-store"></i>
+                            <span key="t-ecommerce">@lang('translation.Ecommerce')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="ecommerce-products" key="t-products">@lang('translation.Products')</a></li>
+                            <li><a href="ecommerce-product-detail" key="t-product-detail">@lang('translation.Product_Detail')</a></li>
+                            <li><a href="ecommerce-orders" key="t-orders">@lang('translation.Orders')</a></li>
+                            <li><a href="ecommerce-customers" key="t-customers">@lang('translation.Customers')</a></li>
+                            <li><a href="ecommerce-cart" key="t-cart">@lang('translation.Cart')</a></li>
+                            <li><a href="ecommerce-checkout" key="t-checkout">@lang('translation.Checkout')</a></li>
+                            <li><a href="ecommerce-shops" key="t-shops">@lang('translation.Shops')</a></li>
+                            <li><a href="ecommerce-add-product" key="t-add-product">@lang('translation.Add_Product')</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-bitcoin"></i>
+                            <span key="t-crypto">@lang('translation.Crypto')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="crypto-wallet" key="t-wallet">@lang('translation.Wallet')</a></li>
+                            <li><a href="crypto-buy-sell" key="t-buy">@lang('translation.Buy_Sell')</a></li>
+                            <li><a href="crypto-exchange" key="t-exchange">@lang('translation.Exchange')</a></li>
+                            <li><a href="crypto-lending" key="t-lending">@lang('translation.Lending')</a></li>
+                            <li><a href="crypto-orders" key="t-orders">@lang('translation.Orders')</a></li>
+                            <li><a href="crypto-kyc-application" key="t-kyc">@lang('translation.KYC_Application')</a></li>
+                            <li><a href="crypto-ico-landing" key="t-ico">@lang('translation.ICO_Landing')</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-envelope"></i>
+                            <span key="t-email">@lang('translation.Email')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="email-inbox" key="t-inbox">@lang('translation.Inbox')</a></li>
+                            <li><a href="email-read" key="t-read-email">@lang('translation.Read_Email')</a></li>
+                            <li>
+                                <a href="javascript: void(0);">
+                                    <span key="t-email-templates">@lang('translation.Templates')</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="true">
+                                    <li><a href="email-template-basic" key="t-basic-action">@lang('translation.Basic_Action')</a>
+                                    </li>
+                                    <li><a href="email-template-alert" key="t-alert-email">@lang('translation.Alert_Email')</a></li>
+                                    <li><a href="email-template-billing" key="t-bill-email">@lang('translation.Billing_Email')</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-receipt"></i>
+                            <span key="t-invoices">@lang('translation.Invoices')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="invoices-list" key="t-invoice-list">@lang('translation.Invoice_List')</a></li>
+                            <li><a href="invoices-detail" key="t-invoice-detail">@lang('translation.Invoice_Detail')</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-briefcase-alt-2"></i>
+                            <span key="t-projects">@lang('translation.Projects')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="projects-grid" key="t-p-grid">@lang('translation.Projects_Grid')</a></li>
+                            <li><a href="projects-list" key="t-p-list">@lang('translation.Projects_List')</a></li>
+                            <li><a href="projects-overview" key="t-p-overview">@lang('translation.Project_Overview')</a>
+                            </li>
+                            <li><a href="projects-create" key="t-create-new">@lang('translation.Create_New')</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-task"></i>
+                            <span key="t-tasks">@lang('translation.Tasks')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="tasks-list" key="t-task-list">@lang('translation.Task_List')</a></li>
+                            <li><a href="tasks-kanban" key="t-kanban-board">@lang('translation.Kanban_Board')</a></li>
+                            <li><a href="tasks-create" key="t-create-task">@lang('translation.Create_Task')</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bxs-user-detail"></i>
+                            <span key="t-contacts">@lang('translation.Contacts')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="contacts-grid" key="t-user-grid">@lang('translation.User_Grid')</a></li>
+                            <li><a href="contacts-list" key="t-user-list">@lang('translation.User_List')</a></li>
+                            <li><a href="contacts-profile" key="t-profile">@lang('translation.Profile')</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-detail"></i>
+                            <span key="t-blog">@lang('translation.Blog')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="blog-list" key="t-blog-list">@lang('translation.Blog_List')</a></li>
+                            <li><a href="blog-grid" key="t-blog-grid">@lang('translation.Blog_Grid')</a></li>
+                            <li><a href="blog-details" key="t-blog-details">@lang('translation.Blog_Details')</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="waves-effect">
+                            <span class="badge rounded-pill bg-success float-end"
+                                key="t-new">@lang('translation.New')</span>
+                            <i class="bx bx-briefcase-alt"></i>
+                            <span key="t-jobs">@lang('translation.Jobs')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="job-list" key="t-job-list">@lang('translation.Job_List')</a></li>
+                            <li><a href="job-grid" key="t-job-grid">@lang('translation.Job_Grid')</a></li>
+                            <li><a href="job-apply" key="t-apply-job">@lang('translation.Apply_Job')</a></li>
+                            <li><a href="job-details" key="t-job-details">@lang('translation.Job_Details')</a></li>
+                            <li><a href="job-categories" key="t-Jobs-categories">@lang('translation.Jobs_Categories')</a></li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"
+                                    key="t-candidate">@lang('translation.Candidate')</a>
+                                <ul class="sub-menu" aria-expanded="true">
+                                    <li><a href="candidate-list" key="t-list">@lang('translation.List')</a></li>
+                                    <li><a href="candidate-overview" key="t-overview">@lang('translation.Overview')</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-title" key="t-pages">@lang('translation.Pages')</li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-user-circle"></i>
+                            <span key="t-authentication">@lang('translation.Authentication')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="auth-login" key="t-login">@lang('translation.Login')</a></li>
+                            <li><a href="auth-login-2" key="t-login-2">@lang('translation.Login') 2</a></li>
+                            <li><a href="auth-register" key="t-register">@lang('translation.Register')</a></li>
+                            <li><a href="auth-register-2" key="t-register-2">@lang('translation.Register') 2</a></li>
+                            <li><a href="auth-recoverpw" key="t-recover-password">@lang('translation.Recover_Password')</a>
+                            </li>
+                            <li><a href="auth-recoverpw-2" key="t-recover-password-2">@lang('translation.Recover_Password')
+                                    2</a></li>
+                            <li><a href="auth-lock-screen" key="t-lock-screen">@lang('translation.Lock_Screen')</a></li>
+                            <li><a href="auth-lock-screen-2" key="t-lock-screen-2">@lang('translation.Lock_Screen') 2</a>
+                            </li>
+                            <li><a href="auth-confirm-mail" key="t-confirm-mail">@lang('translation.Confirm_Mail')</a></li>
+                            <li><a href="auth-confirm-mail-2" key="t-confirm-mail-2">@lang('translation.Confirm_Mail') 2</a>
+                            </li>
+                            <li><a href="auth-email-verification" key="t-email-verification">@lang('translation.Email_verification')</a>
+                            </li>
+                            <li><a href="auth-email-verification-2" key="t-email-verification-2">@lang('translation.Email_verification')
+                                    2</a>
+                            </li>
+                            <li><a href="auth-two-step-verification"
+                                    key="t-two-step-verification">@lang('translation.Two_step_verification')</a>
+                            </li>
+                            <li><a href="auth-two-step-verification-2"
+                                    key="t-two-step-verification-2">@lang('translation.Two_step_verification')
+                                    2</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-file"></i>
+                            <span key="t-utility">@lang('translation.Utility')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="pages-starter" key="t-starter-page">@lang('translation.Starter_Page')</a></li>
+                            <li><a href="pages-maintenance" key="t-maintenance">@lang('translation.Maintenance')</a></li>
+                            <li><a href="pages-comingsoon" key="t-coming-soon">@lang('translation.Coming_Soon')</a></li>
+                            <li><a href="pages-timeline" key="t-timeline">@lang('translation.Timeline')</a></li>
+                            <li><a href="pages-faqs" key="t-faqs">@lang('translation.FAQs')</a></li>
+                            <li><a href="pages-pricing" key="t-pricing">@lang('translation.Pricing')</a></li>
+                            <li><a href="pages-404" key="t-error-404">@lang('translation.Error_404')</a></li>
+                            <li><a href="pages-500" key="t-error-500">@lang('translation.Error_500')</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-title" key="t-components">@lang('translation.Components')</li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-tone"></i>
+                            <span key="t-ui-elements">@lang('translation.UI_Elements')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="ui-alerts" key="t-alerts">@lang('translation.Alerts')</a></li>
+                            <li><a href="ui-buttons" key="t-buttons">@lang('translation.Buttons')</a></li>
+                            <li><a href="ui-cards" key="t-cards">@lang('translation.Cards')</a></li>
+                            <li><a href="ui-carousel" key="t-carousel">@lang('translation.Carousel')</a></li>
+                            <li><a href="ui-dropdowns" key="t-dropdowns">@lang('translation.Dropdowns')</a></li>
+                            <li><a href="ui-grid" key="t-grid">@lang('translation.Grid')</a></li>
+                            <li><a href="ui-images" key="t-images">@lang('translation.Images')</a></li>
+                            <li><a href="ui-lightbox" key="t-lightbox">@lang('translation.Lightbox')</a></li>
+                            <li><a href="ui-modals" key="t-modals">@lang('translation.Modals')</a></li>
+                            <li><a href="ui-offcanvas" key="t-offcanvas">@lang('translation.Offcanvas')</a></li>
+                            <li><a href="ui-rangeslider" key="t-range-slider">@lang('translation.Range_Slider')</a></li>
+                            <li><a href="ui-session-timeout" key="t-session-timeout">@lang('translation.Session_Timeout')</a></li>
+                            <li><a href="ui-progressbars" key="t-progress-bars">@lang('translation.Progress_Bars')</a></li>
+                            <li><a href="ui-placeholders" key="t-placeholders">@lang('translation.Placeholders')</a></li>
+                            <li><a href="ui-sweet-alert" key="t-sweet-alert">@lang('translation.Sweet_Alert')</a></li>
+                            <li><a href="ui-tabs-accordions" key="t-tabs-accordions">@lang('translation.Tabs_&_Accordions')</a></li>
+                            <li><a href="ui-typography" key="t-typography">@lang('translation.Typography')</a></li>
+                            <li><a href="ui-toasts" key="t-toasts">@lang('translation.Toasts')</a></li>
+                            <li><a href="ui-video" key="t-video">@lang('translation.Video')</a></li>
+                            <li><a href="ui-general" key="t-general">@lang('translation.General')</a></li>
+                            <li><a href="ui-colors" key="t-colors">@lang('translation.Colors')</a></li>
+                            <li><a href="ui-rating" key="t-rating">@lang('translation.Rating')</a></li>
+                            <li><a href="ui-notifications" key="t-notifications">@lang('translation.Notifications')</a></li>
+                            <li><a href="ui-utilities"><span key="t-utilities">@lang('translation.Utilities')</span> <span
+                                        class="badge rounded-pill bg-success float-end"
+                                        key="t-new">@lang('translation.New')</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="waves-effect">
+                            <i class="bx bxs-eraser"></i>
+                            <span class="badge rounded-pill bg-danger float-end">10</span>
+                            <span key="t-forms">@lang('translation.Forms')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="form-elements" key="t-form-elements">@lang('translation.Form_Elements')</a></li>
+                            <li><a href="form-layouts" key="t-form-layouts">@lang('translation.Form_Layouts')</a></li>
+                            <li><a href="form-validation" key="t-form-validation">@lang('translation.Form_Validation')</a>
+                            </li>
+                            <li><a href="form-advanced" key="t-form-advanced">@lang('translation.Form_Advanced')</a></li>
+                            <li><a href="form-editors" key="t-form-editors">@lang('translation.Form_Editors')</a></li>
+                            <li><a href="form-uploads" key="t-form-upload">@lang('translation.Form_File_Upload')</a></li>
+                            <li><a href="form-xeditable" key="t-form-xeditable">@lang('translation.Form_Xeditable')</a></li>
+                            <li><a href="form-repeater" key="t-form-repeater">@lang('translation.Form_Repeater')</a></li>
+                            <li><a href="form-wizard" key="t-form-wizard">@lang('translation.Form_Wizard')</a></li>
+                            <li><a href="form-mask" key="t-form-mask">@lang('translation.Form_Mask')</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-list-ul"></i>
+                            <span key="t-tables">@lang('translation.Tables')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="tables-basic" key="t-basic-tables">@lang('translation.Basic_Tables')</a></li>
+                            <li><a href="tables-datatable" key="t-data-tables">@lang('translation.Data_Tables')</a></li>
+                            <li><a href="tables-responsive" key="t-responsive-table">@lang('translation.Responsive_Table')</a></li>
+                            <li><a href="tables-editable" key="t-editable-table">@lang('translation.Editable_Table')</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bxs-bar-chart-alt-2"></i>
+                            <span key="t-charts">@lang('translation.Charts')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="charts-apex" key="t-apex-charts">@lang('translation.Apex_Charts')</a></li>
+                            <li><a href="charts-echart" key="t-e-charts">@lang('translation.E_Charts')</a></li>
+                            <li><a href="charts-chartjs" key="t-chartjs-charts">@lang('translation.Chartjs_Charts')</a></li>
+                            <li><a href="charts-flot" key="t-flot-charts">@lang('translation.Flot_Charts')</a></li>
+                            <li><a href="charts-tui" key="t-ui-charts">@lang('translation.Toast_UI_Charts')</a></li>
+                            <li><a href="charts-knob" key="t-knob-charts">@lang('translation.Jquery_Knob_Charts')</a></li>
+                            <li><a href="charts-sparkline" key="t-sparkline-charts">@lang('translation.Sparkline_Charts')</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-aperture"></i>
+                            <span key="t-icons">@lang('translation.Icons')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="icons-boxicons" key="t-boxicons">@lang('translation.Boxicons')</a></li>
+                            <li><a href="icons-materialdesign" key="t-material-design">@lang('translation.Material_Design')</a></li>
+                            <li><a href="icons-dripicons" key="t-dripicons">@lang('translation.Dripicons')</a></li>
+                            <li><a href="icons-fontawesome" key="t-font-awesome">@lang('translation.Font_awesome')</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-map"></i>
+                            <span key="t-maps">@lang('translation.Maps')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="maps-google" key="t-g-maps">@lang('translation.Google_Maps')</a></li>
+                            <li><a href="maps-vector" key="t-v-maps">@lang('translation.Vector_Maps')</a></li>
+                            <li><a href="maps-leaflet" key="t-l-maps">@lang('translation.Leaflet_Maps')</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-share-alt"></i>
+                            <span key="t-multi-level">@lang('translation.Multi_Level')</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="true">
+                            <li><a href="javascript: void(0);" key="t-level-1-1">@lang('translation.Level_1.1')</a></li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow"
+                                    key="t-level-1-2">@lang('translation.Level_1.2')</a>
+                                <ul class="sub-menu" aria-expanded="true">
+                                    <li><a href="javascript: void(0);" key="t-level-2-1">@lang('translation.Level_2.1')</a>
+                                    </li>
+                                    <li><a href="javascript: void(0);" key="t-level-2-2">@lang('translation.Level_2.2')</a>
+                                    </li> --}}
+                </ul>
+                </li>
+            </ul>
+            </li>
+
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+</div>
+<!-- Left Sidebar End -->

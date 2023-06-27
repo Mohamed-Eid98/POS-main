@@ -1,103 +1,151 @@
 @extends('layouts.master')
+
+@section('title')
+    @lang('translation.Calendars')
+@endsection
+
 @section('css')
-<!-- Internal fullcalendar Css-->
-<link href="{{URL::asset('assets/plugins/fullcalendar/fullcalendar.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/build/libs/tui-time-picker/tui-time-picker.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/build/libs/tui-date-picker/tui-date-picker.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/build/libs/tui-calendar/tui-calendar.min.css') }}" />
 @endsection
-@section('page-header')
-				<!-- breadcrumb -->
-				<div class="breadcrumb-header justify-content-between">
-					<div class="my-auto">
-						<div class="d-flex"><h4 class="content-title mb-0 my-auto">Apps</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/ Calendar</span></div>
-					</div>
-					<div class="d-flex my-xl-auto right-content">
-						<div class="pr-1 mb-3 mb-xl-0">
-							<button type="button" class="btn btn-info btn-icon ml-2"><i class="mdi mdi-filter-variant"></i></button>
-						</div>
-						<div class="pr-1 mb-3 mb-xl-0">
-							<button type="button" class="btn btn-danger btn-icon ml-2"><i class="mdi mdi-star"></i></button>
-						</div>
-						<div class="pr-1 mb-3 mb-xl-0">
-							<button type="button" class="btn btn-warning  btn-icon ml-2"><i class="mdi mdi-refresh"></i></button>
-						</div>
-						<div class="mb-3 mb-xl-0">
-							<div class="btn-group dropdown">
-								<button type="button" class="btn btn-primary">14 Aug 2019</button>
-								<button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuDate" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="sr-only">Toggle Dropdown</span>
-								</button>
-								<div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuDate" data-x-placement="bottom-end">
-									<a class="dropdown-item" href="#">2015</a>
-									<a class="dropdown-item" href="#">2016</a>
-									<a class="dropdown-item" href="#">2017</a>
-									<a class="dropdown-item" href="#">2018</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- breadcrumb -->
-@endsection
+
 @section('content')
-				<div class="main-content-app pd-b-0  main-content-calendar pt-0">
-					<!-- row -->
-					<div class="row row-sm">
-						<div class="col-lg-12 col-xl-4">
-							<div class=" card card--calendar p-0 mg-b-20">
-								<div class="p-4 border-bottom">
-									<h2 class="main-content-title mg-b-15 tx-16">My Calendar</h2>
-									<div class="text-center mx-auto">
-										<img src="{{URL::asset('assets/img/media/calendar.png')}}" alt="calendar" class="ht-80p wd-80p">
-									</div>
-								</div>
-								<div class=" card p-4 mb-0 pb-0 pl-4 pr-4 pt-4">
-									<div class="fc-datepicker main-datepicker border "></div>
-								</div>
-								<div class="p-4 pt-0">
-									<label class="main-content-label tx-14 tx-bold mg-b-10">Event List</label>
-									<nav class="nav main-nav-column main-nav-calendar-event">
-										<a class="nav-link" href=""><i class="icon ion-ios-calendar tx-primary"></i>
-										<div>
-											Calendar Events
-										</div></a> <a class="nav-link" href=""><i class="icon ion-ios-calendar tx-success"></i>
-										<div>
-											Birthday Events
-										</div></a> <a class="nav-link" href=""><i class="icon ion-ios-calendar tx-danger"></i>
-										<div>
-											Holiday Calendar
-										</div></a> <a class="nav-link" href=""><i class="icon ion-ios-calendar tx-warning"></i>
-										<div>
-											Other Calendar
-										</div></a> <a class="nav-link exclude" href=""><i class="icon ion-ios-calendar tx-info"></i>
-										<div>
-											Discovered Events
-										</div></a>
-									</nav>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12 col-xl-8">
-							<div class="main-content-body main-content-body-calendar card p-4">
-								<div class="main-calendar" id="calendar"></div>
-							</div>
-						</div>
-					</div>
-					<!-- /row -->
-				</div>
-			</div>
-			<!-- Container closed -->
-		</div>
-		<!-- main-content closed -->
+    @component('components.breadcrumb')
+        @slot('li_1')
+            Skote
+        @endslot
+        @slot('title')
+            Calendar
+        @endslot
+    @endcomponent
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div id="lnb">
+
+
+                        <div id="right">
+                            <div id="menu" class="mb-3">
+
+                                <span id="menu-navi"
+                                    class="d-sm-flex flex-wrap text-center text-sm-start justify-content-sm-between">
+                                    <div class="d-sm-flex flex-wrap gap-1">
+                                        <div class="btn-group mb-2" role="group" aria-label="Basic example">
+                                            <button type="button" class="btn btn-primary move-day" data-action="move-prev">
+                                                <i class="calendar-icon ic-arrow-line-left mdi mdi-chevron-left"
+                                                    data-action="move-prev"></i>
+                                            </button>
+                                            <button type="button" class="btn btn-primary move-day" data-action="move-next">
+                                                <i class="calendar-icon ic-arrow-line-right mdi mdi-chevron-right"
+                                                    data-action="move-next"></i>
+                                            </button>
+                                        </div>
+
+
+                                        <button type="button" class="btn btn-primary move-today mb-2"
+                                            data-action="move-today">Today</button>
+                                    </div>
+
+                                    <h4 id="renderRange" class="render-range fw-bold pt-1 mx-3"></h4>
+
+                                    <div class="dropdown align-self-start mt-3 mt-sm-0 mb-2">
+                                        <button id="dropdownMenu-calendarType" class="btn btn-primary" type="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            <i id="calendarTypeIcon" class="calendar-icon ic_view_month"
+                                                style="margin-right: 4px;"></i>
+                                            <span id="calendarTypeName">Dropdown</span>&nbsp;
+                                            <i class="calendar-icon tui-full-calendar-dropdown-arrow"></i>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end" role="menu"
+                                            aria-labelledby="dropdownMenu-calendarType">
+                                            <li role="presentation">
+                                                <a class="dropdown-item" role="menuitem" data-action="toggle-daily">
+                                                    <i class="calendar-icon ic_view_day"></i>Daily
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a class="dropdown-item" role="menuitem" data-action="toggle-weekly">
+                                                    <i class="calendar-icon ic_view_week"></i>Weekly
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a class="dropdown-item" role="menuitem" data-action="toggle-monthly">
+                                                    <i class="calendar-icon ic_view_month"></i>Month
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a class="dropdown-item" role="menuitem" data-action="toggle-weeks2">
+                                                    <i class="calendar-icon ic_view_week"></i>2 weeks
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a class="dropdown-item" role="menuitem" data-action="toggle-weeks3">
+                                                    <i class="calendar-icon ic_view_week"></i>3 weeks
+                                                </a>
+                                            </li>
+                                            <li role="presentation" class="dropdown-divider"></li>
+                                            <li role="presentation">
+                                                <a class="dropdown-item" role="menuitem" data-action="toggle-workweek">
+                                                    <input type="checkbox" class="tui-full-calendar-checkbox-square"
+                                                        value="toggle-workweek" checked>
+                                                    <span class="checkbox-title"></span>Show weekends
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a class="dropdown-item" role="menuitem" data-action="toggle-start-day-1">
+                                                    <input type="checkbox" class="tui-full-calendar-checkbox-square"
+                                                        value="toggle-start-day-1">
+                                                    <span class="checkbox-title"></span>Start Week on Monday
+                                                </a>
+                                            </li>
+                                            <li role="presentation">
+                                                <a class="dropdown-item" role="menuitem"
+                                                    data-action="toggle-narrow-weekend">
+                                                    <input type="checkbox" class="tui-full-calendar-checkbox-square"
+                                                        value="toggle-narrow-weekend">
+                                                    <span class="checkbox-title"></span>Narrower than weekdays
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </span>
+
+                            </div>
+                        </div>
+
+                        <div class="lnb-new-schedule float-sm-end ms-sm-3 mt-4 mt-sm-0">
+                            <button id="btn-new-schedule" type="button" class="btn btn-primary lnb-new-schedule-btn"
+                                data-toggle="modal">
+                                New schedule</button>
+                        </div>
+                        <div id="calendarList" class="lnb-calendars-d1 mt-4 mt-sm-0 me-sm-0 mb-4"></div>
+
+
+                        <div id="calendar" style="height: 800px;"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
-@section('js')
-<!-- moomet min js -->
-<script src="{{URL::asset('assets/plugins/moment/min/moment.min.js')}}"></script>
-<!--Internal  Date picker js -->
-<script src="{{URL::asset('assets/plugins/jquery-ui/ui/widgets/datepicker.js')}}"></script>
-<!--Internal  Fullcalendar js -->
-<script src="{{URL::asset('assets/plugins/fullcalendar/fullcalendar.min.js')}}"></script>
-<!-- Internal Select2.full.min js -->
-<script src="{{URL::asset('assets/plugins/select2/js/select2.full.min.js')}}"></script>
-<!--Internal App calendar js -->
-<script src="{{URL::asset('assets/js/app-calendar-events.js')}}"></script>
-<script src="{{URL::asset('assets/js/app-calendar.js')}}"></script>
+
+@section('script')
+    <script src="https://uicdn.toast.com/tui.code-snippet/latest/tui-code-snippet.min.js"></script>
+    <script src="{{ URL::asset('build/libs/tui-dom/tui-dom.min.js') }}"></script>
+
+    <script src="{{ URL::asset('build/libs/tui-time-picker/tui-time-picker.min.js') }}"></script>
+    <script src="{{ URL::asset('build/libs/tui-date-picker/tui-date-picker.min.js') }}"></script>
+
+    <script src="{{ URL::asset('build/libs//moment/min/moment.min.js') }}"></script>
+    <script src="{{ URL::asset('build/libs/chance/chance.min.js') }}"></script>
+
+    <script src="{{ URL::asset('build/libs/tui-calendar/tui-calendar.min.js') }}"></script>
+
+    <script src="{{ URL::asset('build/js/pages/calendars.js') }}"></script>
+    <script src="{{ URL::asset('build/js/pages/schedules.js') }}"></script>
+    <script src="{{ URL::asset('build/js/pages/calendar.init.js') }}"></script>
 @endsection

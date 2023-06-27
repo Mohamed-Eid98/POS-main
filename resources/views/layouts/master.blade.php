@@ -1,32 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
-		<meta name="Author" content="Spruko Technologies Private Limited">
-		<meta name="Keywords" content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4"/>
-		@include('layouts.head')
-	</head>
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-	<body class="main-body app sidebar-mini">
-		<!-- Loader -->
-		<div id="global-loader">
-			<img src="{{URL::asset('assets/img/loader.svg')}}" class="loader-img" alt="Loader">
-		</div>
-		<!-- /Loader -->
-		@include('layouts.main-sidebar')		
-		<!-- main-content -->
-		<div class="main-content app-content">
-			@include('layouts.main-header')			
-			<!-- container -->
-			<div class="container-fluid">
-				@yield('page-header')
-				@yield('content')
-				@include('layouts.sidebar')
-				@include('layouts.models')
-            	@include('layouts.footer')
-				@include('layouts.footer-scripts')	
-	</body>
+<head>
+    <meta charset="utf-8" />
+    <title> @yield('title') | Skote - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{{ URL::asset('build/images/favicon.ico') }}">
+    @include('layouts.head-css')
+</head>
+
+@section('body')
+    <body data-sidebar="dark">
+@show
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+        @include('layouts.topbar')
+        @include('layouts.sidebar')
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+            <div class="page-content">
+                <div class="container-fluid">
+                    @yield('content')
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+            @include('layouts.footer')
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Right Sidebar -->
+    @include('layouts.right-sidebar')
+    <!-- /Right-bar -->
+
+    <!-- JAVASCRIPT -->
+    @include('layouts.vendor-scripts')
+</body>
+
 </html>

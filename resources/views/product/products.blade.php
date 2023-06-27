@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title')
-    المنتجات
+    products
 @stop
 @section('css')
     <!-- Internal Data table css -->
@@ -16,8 +16,8 @@
     <div class="breadcrumb-header justify-content-between">
         <div class="my-auto">
             <div class="d-flex">
-                <h4 class="content-title mb-0 my-auto">الاعدادات</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/
-                    المنتجات</span>
+                <h4 class="content-title mb-0 my-auto">تعديل</h4><span class="text-muted mt-1 tx-13 mr-2 mb-0">/
+                    المتجات</span>
             </div>
         </div>
     </div>
@@ -70,7 +70,7 @@
             <div class="card ">
                 <div class="col-sm-6 col-md-4 col-xl-12">
                     <a class="modal-effect btn btn-outline-primary btn-block" data-effect="effect-scale" data-toggle="modal"
-                        href="#modaldemo8">اضافه منتج</a>
+                        href="#modaldemo8"> اضافه منتج</a>
                 </div>
                 <div class="card-header pb-0">
                 </div>
@@ -81,8 +81,14 @@
                                 <th class="border-bottom-0">#</th>
                                 <th class="border-bottom-0"> اسم المنتج</th>
                                 <th class="border-bottom-0"> القسم</th>
-                                <th class="border-bottom-0"> ملاحظات</th>
-                                <th class="border-bottom-0"> العمليات</th>
+                                <th class="border-bottom-0"> الصوره</th>
+                                <th class="border-bottom-0"> المقاس</th>
+                                <th class="border-bottom-0"> الكود</th>
+                                <th class="border-bottom-0"> min_price</th>
+                                <th class="border-bottom-0"> increase_ratio</th>
+                                <th class="border-bottom-0"> السعر</th>
+                                <th class="border-bottom-0"> وصف</th>
+                                <th class="border-bottom-0"> Actions</th>
 
                             </tr>
                         </thead>
@@ -95,6 +101,14 @@
                                     <td>{{ $i }}</td>
                                     <td>{{ $product->product_name }}</td>
                                     <td>{{ $product->section->section_name }}</td>
+                                    <td>الصوره</td>
+                                    <td>المقاس</td>
+                                    <td>{{ $product->code }}</td>
+                                    <td>{{ $product->min_price }}</td>
+                                    <td>{{ $product->increase_ratio }}</td>
+
+                                    <td>{{ $product->price }}</td>
+
                                     <td>{{ $product->description }}</td>
 
                                     <td>
@@ -125,33 +139,63 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content modal-content-demo">
                     <div class="modal-header">
-                        <h6 class="modal-title">اضافه منتج</h6><button aria-label="Close" class="close"
+                        <h6 class="modal-title"> اضافه منتجات</h6><button aria-label="Close" class="close"
                             data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <div class="modal-body">
-                        <form action="{{ route('products.store') }}" method="post">
+                        <form action="{{ route('products.store') }}" method="post" enctype="multipart/form-data">
                             {{ csrf_field() }}
 
                             <div class="form-group">
-                                <label for="exampleInputEmail1">اسم المنتج</label>
+                                <label for="exampleInputEmail1"> اسم المنتج
+
+                                </label>
                                 <input type="text" class="form-control" id="product_name" name="product_name">
                             </div>
 
                             <select name="section_id" id="section_id" class="form-control" required>
-                                <option value="" selected disabled> --حدد القسم--</option>
+                                <option value="" selected disabled> --اختار قسم--</option>
                                 @foreach ($sections as $section)
                                     <option value="{{ $section->id }}">{{ $section->section_name }}</option>
                                 @endforeach
                             </select>
 
                             <div class="form-group">
-                                <label for="exampleFormControlTextarea1">ملاحظات</label>
+                                <label for="exampleInputEmail1"> صوره</label>
+                                <input type="file" class="form-control" id="image" name="image">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">الكود</label>
+                                <input type="text" class="form-control" id="code" name="code">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">min_price</label>
+                                <input type="text" class="form-control" id="min_price" name="min_price">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">increase_ratio</label>
+                                <input type="text" class="form-control" id="increase_ratio" name="increase_ratio">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">السعر</label>
+                                <input type="text" class="form-control" id="price" name="price">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">المقاس</label>
+                                <input type="text" class="form-control" id="size" name="size">
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">وصف</label>
                                 <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                             </div>
 
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-success">تاكيد</button>
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                                <button type="submit" class="btn btn-success">حفظ</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
                             </div>
                         </form>
                     </div>
@@ -166,7 +210,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">تعديل المنتج</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">edit product</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -178,21 +222,21 @@
                             {{ csrf_field() }}
                             <div class="form-group">
                                 <input type="hidden" name="product_id" id="product_id" value="">
-                                <label for="recipient-name" class="col-form-label">اسم المنتج:</label>
+                                <label for="recipient-name" class="col-form-label">product name:</label>
                                 <input class="form-control" name="product_name" id="product_name" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="message-text" class="col-form-label">القسم:</label>
+                                <label for="message-text" class="col-form-label">department:</label>
                                 <textarea class="form-control" id="section_name" name="section_name"></textarea>
                             </div>
                             <div class="form-group">
-                                <label for="message-text" class="col-form-label">ملاحظات:</label>
+                                <label for="message-text" class="col-form-label">notes:</label>
                                 <textarea class="form-control" id="description" name="description"></textarea>
                             </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">تاكيد</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                        <button type="submit" class="btn btn-primary">submit</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">colse</button>
                     </div>
                     </form>
                 </div>
@@ -203,20 +247,20 @@
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content modal-content-demo">
                     <div class="modal-header">
-                        <h6 class="modal-title">حذف المنتج</h6><button aria-label="Close" class="close"
+                        <h6 class="modal-title">remove product</h6><button aria-label="Close" class="close"
                             data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button>
                     </div>
                     <form action="products/destroy" method="post">
                         {{ method_field('delete') }}
                         {{ csrf_field() }}
                         <div class="modal-body">
-                            <p>هل انت متاكد من عملية الحذف ؟</p><br>
+                            <p>Do you want to remove it </p><br>
                             <input type="hidden" name="product_id" id="product_id" value="">
                             <input class="form-control" name="product_name" id="product_name" type="text" readonly>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">الغاء</button>
-                            <button type="submit" class="btn btn-danger">تاكيد</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>
+                            <button type="submit" class="btn btn-danger">submit</button>
                         </div>
                 </div>
                 </form>

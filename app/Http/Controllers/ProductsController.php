@@ -20,7 +20,8 @@ class ProductsController extends Controller
     {
         $products=products::all();
         $sections=sections::all();
-        return view('product.products',compact('products'),compact('sections'));
+        return view('product.products',compact('products','sections'));
+
     }
 
     /**
@@ -30,7 +31,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -50,15 +51,28 @@ class ProductsController extends Controller
 
 
        ]);
+       $image = $request->file('image')->getClientOriginalName();
+       $path=$request->file('image')->storeAS('photo',$image,'save');
+
 
            products::create([
-               'product_name' => $request->product_name,
-               'section_id'=>$request->section_id,
-               'description' => $request->description,
+                'product_name' => $request->product_name,
+                'section_id'=>$request->section_id,
+                'size' => $request->size,
+                'description' => $request->description,
+                'path'=>$path,
+                'size' => $request->size,
 
-           ]);
-           session()->flash('Add', 'تم اضافة المنتج بنجاح ');
-           return redirect('/sections');
+                'min_price' => $request->min_price,
+                'increase_ratio' => $request->increase_ratio,
+                'code' => $request->code,
+                'price' => $request->price,
+
+
+
+            ]);
+            session()->flash('Add', 'تم اضافة المنتج بنجاح ');
+            return redirect('/section');
 
        }
 
